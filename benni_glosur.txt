@@ -1,0 +1,256 @@
+ur Fyrir próferínó
+
+{21 Version control
+
+	Version control Types:{
+		Local version control
+			rcs
+		centralized server control
+
+		Distributd version control
+			git
+			merc
+	}
+
+	Version Control Benefits:{
+
+		Backup And restore
+
+		Synchronization
+
+		Short Term undo
+
+		Long term Undo
+
+		Track Changes
+
+		Track Ownership
+
+		Sandboxing, or insurance vs urself
+
+		Branching and merging
+
+	}
+
+	Version Control Terminology:{
+
+		Repository
+
+		Working Copy
+
+		Check out
+
+		Update
+
+		Lock
+
+		trunk
+
+		branch 
+
+		Tag
+
+		Commit
+
+		Add
+
+		Head
+
+		Revision
+
+		Change
+
+		Change list
+
+		Merge
+
+		Conflict
+
+		Resolve
+
+		Revert 
+
+		Rollback
+
+	}
+
+	Version Control Limitations:{
+		Merging only effective on text files with meaningful line breaks
+		Branching and merging cannot be fully automated
+	}
+
+	Not the (main) purpose of VCS:{
+		To manage project management artifacts
+		to manage generated artifacts
+		To manage Temporary information
+	}
+
+	Distributed Version Control:{
+		Centralized VCS are not good in merging and branching
+		Distributed systems make branching and merging painless. <- rely on it
+	}
+}
+
+
+{22
+
+	gIT STUFF DO LATER
+}
+
+
+{23 Test Driven Development
+
+	Unit tests{
+
+		Aimed at smallest testable part of application
+
+		Part of the source code
+
+		Run as part of build process
+			 
+		Run fast
+
+		Responsibility of programmer
+
+		Code coverage = how well your code is covered by unit-tests.
+	}
+
+	Benefits of unit tests:{
+
+		Facilitates changes
+
+		simplifies integration
+
+		Documentation
+			The only kind of documentation that's
+			consistently up to date
+
+		Loosely coupled code
+			Unit tests are hard to preform
+			or design on hard coupled code.
+	}
+
+	How to start TDD:{
+		Find a tool for your chosen Language 
+
+		Write all new code using TDD
+
+		Use Helper classes
+
+		Use best practices 
+
+		Test
+	}
+
+	Loose coupling:{
+
+		Coupling is the degree to which each program module
+		relies on each each one of the other modules
+
+		Loose Coupled code
+			One module interacts with another through
+			a stable interface without concerning with
+			the internal implementation
+
+			A change in one module will not require a 
+			change in another module 
+	}
+}
+
+
+{25 Build BROcess
+	The reason to have a build process is to
+	automate a usually repetetive process of 
+	compiling, testing, and deploying software
+	fagget
+
+	The reason to make a build script, is to be quickly 
+	able to test, compile and even deploy a program,
+	Coupled with the continuous change of code this can
+	be very powerful. Instead of manually running test,
+	Compiling code, and deploying said application, 
+	An automated build process can do all this very 
+	efficiently 
+
+
+	Build scripts must have clear success and failures.
+}
+
+
+{27 Cunt-inuous inte-great-ion
+
+	4 Features nessecary for cunt-inuous inte-great-ion
+		-Version control system
+		-build Script
+		-Feedback mechanism
+		-Process for integrating source code changes.
+}
+
+{28 more on unit tests:
+	Test doubles:
+		Dummy:
+			Objects that are passed around but not used
+		Fake:
+			Objects have working implementation, but take
+			some shortcut that makes them unsuitable for 
+			production
+		Stub:
+			Provide canned answers to calls made during the 
+			test usually not answering to anything outside 
+			what's programmed in for the test
+		Spies:
+			Spies retain some information based on how they were
+			called, FX a email service that records how many times
+			it was used.
+		Mock:
+			Mocks are preprogrammed to expect certain calls. they
+			can throw exceptions if they receive call they did not
+			expect. They are checked in verification to see if they 
+			got all the calls they expected to get 
+
+}
+
+{29 Functional tests
+	Focused integration tests
+		How well software communicates with databases and foreign softwaré
+	
+
+
+}
+
+
+{30 Selenium testeronis
+}
+
+
+{31 endir áá testeronis
+	Unit testing
+	Property testing
+	Usability and exploratory testing
+	Exploratory testing 
+}
+
+
+{32 Docu-mental
+	
+	Comments: Try to make the code self-documenting
+		Expressive names, 
+		Everything follows naming convention
+}
+
+{33 Cunt-inuous Derivery}
+
+
+{misc:
+	Software craftmanship manifesto
+		-not only working software but also well crafted software
+		-not only responding to change, but also steadily adding value
+		-not only individuals and actions, but also a community of professionals.
+		-not only customer collaboration, but also productive partnerships
+
+		-NO Working software,		BA Well crafted code
+		-NO Responding to change,	steadily adding value
+		-
+
+
+}

@@ -1,4 +1,4 @@
-Test Driven Development{
+test Driven Development{
 	method to produce esally testable code , loosely coupled and tested
 	funtional tests{
 		can be automated
@@ -134,13 +134,5 @@ pair programming{
 	
 }
 Documentation{
-	Administartion manual{
-
-	}
-	Developer manual{
-
-	}
-	design report{
-	
-	}
+	Snorri ég elska þig <3	
 }
