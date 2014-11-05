@@ -1,0 +1,138 @@
+Test Driven Development{
+	method to produce esally testable code , loosely coupled and tested
+	funtional tests{
+		can be automated
+		end-to-end tests{
+			From the UI to the database and back
+		}
+		customer test{
+			þekkir þarfirnar og veit hvað hann vill að sé útfært
+
+		}
+		automated UI testing{
+			not TDD helpfull
+		}
+		automated API testing{fit
+			does net test UI
+			requires programming knowladge
+
+			fast can be implemented before functionality
+			Canges resitandt
+			encourages Decoupled design
+		}
+		Acceptance test driven development{
+			tesrt implemented before programming
+
+		}
+		Running tested features{
+			the desired software is broken  down int named features
+			for each nemed feature there are one or more automated acceptance 	test which when the work show that the feature is implemented
+			the RTF metric shows at any moment in the project how many 			features are passing all thera acceptance tests
+		}
+
+	}
+	Usability and exploratory testing{
+		usability{
+			test how the system is percived by the user
+			Goal, find ways to make the systeam easier to use
+			performed manually
+		}
+		exploaratory{
+			find surprises gaps adn holes in the system
+			no predefined expected result
+			use the 5 whys , ask your self why? 5 times
+		}
+
+	}
+	Unit test{
+		automated
+		aimed at the smallest testable part of an application
+		part of the source code
+		run as build process
+		benifits{
+			facilitates changes
+			simple intergration
+			Documentation
+			looosley coupled code
+		}
+	}
+	property testing{
+		testing nonfunctional requirements{
+			reliability, mesure the frequency and critacility of failure
+			robustness, quality of being able to hand stress, pressure or 		changes, hvað gerist ef kemur ólöglegt input
+			performance, (speed ,capacty ,sacalability ,stability)
+			security, can the system be penetrated by any hacking way
+		}
+	}
+	TDD Mantra{
+		Red(write test)
+		Greeen(write code)
+		Refactor 
+		Repeat
+
+	}
+}
+Build process{
+	aoutomated build process that transorms source codes in to a fully regression tested ,deplayable software
+	build scripts{
+		compile source code
+		intergrate database
+		run test
+		run inspections
+		deploy software 
+		other
+	}
+}
+continous intergration{
+	four features{
+		1 A connection to a version control repository
+		2 a build script
+		3 some sort of feedback mechanism
+		4 a proscess for intergratin the source code changes
+	}
+	why CI {
+		reduce risks
+		reduyce repetidive manual process
+		generate deplayable software at any time 
+		enable better project visibility
+		Establish greater confidence on the softer product from the develpment team
+	}
+	Good CI{
+		commit code frequently
+		dont commit broken code
+		fix brokent builds immidietly
+		write aoutmaeted developer test
+		all test and inspections must pass
+		run private builds
+	}
+}
+focused intergration tests{
+	test connection to external system (database web services file system network communication)
+	þurfa að vera fá (enda hæg og erfið að byggja)
+}
+Test doubles{
+	dummy objects are passed around but nvever used
+	Fake objects have wrking implementations but take shortcurs
+	Stubs proved a fixed answer when called
+	Spies are stubs who recortd information on how they were caleld
+	Mocks are pre-programmed with expectations which form a specification of the casse they are expected to recive
+}
+code coverage{
+	hversu vel þekja test kóðann þinn
+}
+Software craftmanship manifesto{
+	not only working software m but also well- crafted software
+	not only responding to change but also steadily adding value
+	not only individuals and interactions but also a community of professionals
+	not only costumer collaboration but also productive partnerships
+}
+non-execution based testing{
+	review on code,done by someone who did not write the code
+
+}
+pair programming{
+	
+}
+Documentation{
+	
+}
